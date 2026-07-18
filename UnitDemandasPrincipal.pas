@@ -13,8 +13,12 @@ type
     pnlMenuTopo: TPanel;
     pnlPrincipal: TPanel;
     pnlPesquisa: TPanel;
-    edtPesquisar: TEdit;
-    Image1: TImage;
+    edtPesquisa: TEdit;
+    imgPesquisa: TImage;
+    pnlUsuario: TPanel;
+    imgUsuario: TImage;
+    lblSeta: TLabel;
+    pnlInfoUsuario: TPanel;
   private
     { Private declarations }
   public

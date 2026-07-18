@@ -28,10 +28,6 @@ object Form1: TForm1
     Height = 700
     Align = alClient
     TabOrder = 1
-    ExplicitLeft = 552
-    ExplicitTop = 344
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object pnlMenuTopo: TPanel
       Left = 1
       Top = 1
@@ -48,23 +44,63 @@ object Form1: TForm1
         Align = alLeft
         Caption = 'pnlPesquisa'
         TabOrder = 0
-        object Image1: TImage
+        object imgPesquisa: TImage
           Left = 1
           Top = 1
           Width = 56
           Height = 56
           Align = alLeft
         end
-        object edtPesquisar: TEdit
+        object edtPesquisa: TEdit
           Left = 57
           Top = 1
-          Width = 121
+          Width = 248
           Height = 56
           Align = alLeft
           TabOrder = 0
-          ExplicitLeft = 32
-          ExplicitTop = 16
           ExplicitHeight = 23
+        end
+      end
+      object pnlUsuario: TPanel
+        Left = 794
+        Top = 1
+        Width = 250
+        Height = 58
+        Align = alRight
+        Caption = 'pnlUsuario'
+        TabOrder = 1
+        ExplicitLeft = 744
+        object imgUsuario: TImage
+          Left = 1
+          Top = 1
+          Width = 60
+          Height = 56
+          Align = alLeft
+        end
+        object lblSeta: TLabel
+          Left = 233
+          Top = 1
+          Width = 16
+          Height = 56
+          Align = alRight
+          Caption = 'V'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -24
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitLeft = 242
+          ExplicitHeight = 32
+        end
+        object pnlInfoUsuario: TPanel
+          Left = 61
+          Top = 1
+          Width = 160
+          Height = 56
+          Align = alLeft
+          Caption = 'pnlInfoUsuario'
+          TabOrder = 0
         end
       end
     end
@@ -76,8 +112,6 @@ object Form1: TForm1
       Align = alClient
       Caption = 'pnlPrincipal'
       TabOrder = 1
-      ExplicitTop = 72
-      ExplicitHeight = 627
     end
   end
 end
