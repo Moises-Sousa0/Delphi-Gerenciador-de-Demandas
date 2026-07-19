@@ -18,53 +18,44 @@ object Form1: TForm1
     Width = 200
     Height = 700
     Align = alLeft
-    BevelOuter = bvNone
     Caption = 'pnlMenuLateral'
     TabOrder = 0
     object pnlLogo: TPanel
-      Left = 0
-      Top = 0
-      Width = 200
+      Left = 1
+      Top = 1
+      Width = 198
       Height = 90
       Align = alTop
-      BevelOuter = bvNone
       Caption = 'pnlLogo'
       TabOrder = 0
-      ExplicitLeft = 1
-      ExplicitTop = 1
-      ExplicitWidth = 198
+      ExplicitWidth = 151
     end
     object pnlSecoesPrincipais: TPanel
-      Left = 0
-      Top = 90
-      Width = 200
+      Left = 1
+      Top = 91
+      Width = 198
       Height = 200
       Align = alTop
-      BevelOuter = bvLowered
       Caption = 'pnlSecoesPrincipais'
       TabOrder = 1
-      ExplicitLeft = 1
-      ExplicitTop = 91
-      ExplicitWidth = 198
+      ExplicitWidth = 151
       object lblSecoesPrincipais: TLabel
         Left = 1
         Top = 1
-        Width = 198
+        Width = 196
         Height = 15
         Align = alTop
         Caption = 'Secoes Principais'
-        ExplicitWidth = 90
       end
       object pnlItemDemandas: TPanel
         Left = 1
         Top = 16
-        Width = 198
+        Width = 196
         Height = 60
         Align = alTop
         Alignment = taLeftJustify
-        BevelOuter = bvLowered
+        Caption = 'pnlItemDemandas'
         TabOrder = 0
-        ExplicitWidth = 196
         object lblDemandas: TLabel
           Left = 80
           Top = 16
@@ -73,8 +64,8 @@ object Form1: TForm1
           Caption = 'Demandas'
         end
         object imgDemandas: TImage
-          Left = 47
-          Top = -23
+          Left = 48
+          Top = -32
           Width = 105
           Height = 105
         end
@@ -82,25 +73,22 @@ object Form1: TForm1
       object pnlItemCriarDemanda: TPanel
         Left = 1
         Top = 76
-        Width = 198
+        Width = 196
         Height = 60
         Align = alTop
-        BevelOuter = bvLowered
+        Caption = 'pnlItemCriarDemanda'
         TabOrder = 1
-        ExplicitLeft = 139
-        ExplicitWidth = 123
+        ExplicitTop = 57
         object lblCriarDemanda: TLabel
-          Left = 74
-          Top = 19
+          Left = 88
+          Top = 24
           Width = 79
           Height = 15
           Caption = 'Criar Demanda'
-          Color = clBtnFace
-          ParentColor = False
         end
         object imgCriarDemanda: TImage
-          Left = 47
-          Top = -23
+          Left = 56
+          Top = -24
           Width = 105
           Height = 105
         end
@@ -113,19 +101,20 @@ object Form1: TForm1
     Width = 1000
     Height = 700
     Align = alClient
-    BevelOuter = bvLowered
     Color = clCream
     ParentBackground = False
     TabOrder = 1
+    ExplicitLeft = 153
+    ExplicitWidth = 1047
     object pnlMenuTopo: TPanel
       Left = 1
       Top = 1
       Width = 998
       Height = 60
       Align = alTop
-      BevelOuter = bvLowered
       Caption = 'pnlMenuTopo'
       TabOrder = 0
+      ExplicitWidth = 1045
       object pnlPesquisa: TPanel
         Left = 1
         Top = 1
@@ -159,6 +148,7 @@ object Form1: TForm1
         Align = alRight
         Caption = 'pnlUsuario'
         TabOrder = 1
+        ExplicitLeft = 744
         object imgUsuario: TImage
           Left = 1
           Top = 1
@@ -179,6 +169,7 @@ object Form1: TForm1
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
+          ExplicitLeft = 242
           ExplicitHeight = 32
         end
         object pnlInfoUsuario: TPanel
@@ -187,6 +178,7 @@ object Form1: TForm1
           Width = 160
           Height = 56
           Align = alLeft
+          Caption = 'pnlInfoUsuario'
           TabOrder = 0
         end
       end
@@ -197,9 +189,9 @@ object Form1: TForm1
       Width = 998
       Height = 638
       Align = alClient
-      BevelOuter = bvNone
       Caption = 'pnlPrincipal'
       TabOrder = 1
+      ExplicitWidth = 1045
     end
   end
 end
