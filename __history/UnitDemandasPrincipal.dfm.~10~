@@ -58,7 +58,6 @@ object Form1: TForm1
         Alignment = taLeftJustify
         BevelOuter = bvLowered
         TabOrder = 0
-        OnClick = MenuClick
         object lblDemandas: TLabel
           Left = 80
           Top = 16
@@ -81,7 +80,6 @@ object Form1: TForm1
         Align = alTop
         BevelOuter = bvLowered
         TabOrder = 1
-        OnClick = MenuClick
         object lblCriarDemanda: TLabel
           Left = 74
           Top = 19

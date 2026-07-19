@@ -47,7 +47,7 @@ implementation
 
 procedure TForm1.MenuClick(Sender: TObject);
 begin
-  ShowMessage('teste')
+
 end;
 
 end.

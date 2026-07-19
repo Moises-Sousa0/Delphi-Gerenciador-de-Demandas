@@ -28,7 +28,6 @@ type
     pnlItemCriarDemanda: TPanel;
     lblCriarDemanda: TLabel;
     imgCriarDemanda: TImage;
-    procedure MenuClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,10 +43,5 @@ implementation
 
 
 
-
-procedure TForm1.MenuClick(Sender: TObject);
-begin
-  ShowMessage('teste')
-end;
 
 end.
