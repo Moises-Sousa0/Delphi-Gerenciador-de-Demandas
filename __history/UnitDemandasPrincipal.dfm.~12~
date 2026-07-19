@@ -20,7 +20,6 @@ object Form1: TForm1
     Align = alLeft
     BevelOuter = bvNone
     Caption = 'pnlMenuLateral'
-    ParentBackground = False
     TabOrder = 0
     object pnlLogo: TPanel
       Left = 0
@@ -58,7 +57,6 @@ object Form1: TForm1
         Align = alTop
         Alignment = taLeftJustify
         BevelOuter = bvLowered
-        ParentBackground = False
         TabOrder = 0
         OnClick = MenuClick
         object lblDemandas: TLabel
@@ -82,7 +80,6 @@ object Form1: TForm1
         Height = 60
         Align = alTop
         BevelOuter = bvLowered
-        ParentBackground = False
         TabOrder = 1
         OnClick = MenuClick
         object lblCriarDemanda: TLabel

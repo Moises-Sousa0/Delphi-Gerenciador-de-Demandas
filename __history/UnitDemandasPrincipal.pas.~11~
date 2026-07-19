@@ -47,22 +47,7 @@ implementation
 
 procedure TForm1.MenuClick(Sender: TObject);
 begin
-
-  pnlItemDemandas.Color := clWhite;
-  pnlItemCriarDemanda.Color := clWhite;
-
-
-  if Sender = pnlItemDemandas then
-  begin
-      pnlItemDemandas.Color := clSilver;
-  end
-
-  else if Sender = pnlItemCriarDemanda then
-  begin
-    pnlItemCriarDemanda.Color := clSilver;
-  end;
-
-
+  ShowMessage('teste')
 end;
 
 end.
