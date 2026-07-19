@@ -30,6 +30,9 @@ object Form1: TForm1
       BevelOuter = bvNone
       Caption = 'pnlLogo'
       TabOrder = 0
+      ExplicitLeft = 1
+      ExplicitTop = 1
+      ExplicitWidth = 198
     end
     object pnlSecoesPrincipais: TPanel
       Left = 0
@@ -40,6 +43,9 @@ object Form1: TForm1
       BevelOuter = bvLowered
       Caption = 'pnlSecoesPrincipais'
       TabOrder = 1
+      ExplicitLeft = 1
+      ExplicitTop = 91
+      ExplicitWidth = 198
       object lblSecoesPrincipais: TLabel
         Left = 1
         Top = 1
@@ -58,6 +64,7 @@ object Form1: TForm1
         Alignment = taLeftJustify
         BevelOuter = bvLowered
         TabOrder = 0
+        ExplicitWidth = 196
         object lblDemandas: TLabel
           Left = 80
           Top = 16
@@ -80,6 +87,8 @@ object Form1: TForm1
         Align = alTop
         BevelOuter = bvLowered
         TabOrder = 1
+        ExplicitLeft = 139
+        ExplicitWidth = 123
         object lblCriarDemanda: TLabel
           Left = 74
           Top = 19
