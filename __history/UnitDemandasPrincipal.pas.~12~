@@ -46,26 +46,21 @@ implementation
 
 
 procedure TForm1.MenuClick(Sender: TObject);
-var
-  PainelSelecionado: Tpanel;
-
 begin
-  if Sender is TPanel then
+
+  pnlItemDemandas.Color := clWhite;
+  pnlItemCriarDemanda.Color := clWhite;
+
+
+  if Sender = pnlItemDemandas then
   begin
-      PainelSelecionado := TPanel(Sender);
+      pnlItemDemandas.Color := clSilver;
   end
 
-  else if Sender is TLabel then  //verifica o tipo
+  else if Sender = pnlItemCriarDemanda then
   begin
-      PainelSelecionado := TPanel(TLabel(Sender).Parent);
-  end
-
-  else if Sender is TImage then
-  begin
-      PainelSelecionado := TPanel(TImage(Sender).Parent);
+    pnlItemCriarDemanda.Color := clSilver;
   end;
-
-  PainelSelecionado.Color := clRed;
 
 
 end;

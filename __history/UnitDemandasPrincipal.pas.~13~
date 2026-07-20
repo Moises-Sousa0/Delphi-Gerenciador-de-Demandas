@@ -55,14 +55,19 @@ begin
       PainelSelecionado := TPanel(Sender);
   end
 
-  else if Sender is TLabel then  //verifica o tipo
+  else if Sender is TButton then
   begin
-      PainelSelecionado := TPanel(TLabel(Sender).Parent);
+      PainelSelecionado := TPanel(Sender);
+  end
+
+  else if Sender is TLabel then
+  begin
+      PainelSelecionado := TPanel(Sender);
   end
 
   else if Sender is TImage then
   begin
-      PainelSelecionado := TPanel(TImage(Sender).Parent);
+      PainelSelecionado := TPanel(Sender);
   end;
 
   PainelSelecionado.Color := clRed;
