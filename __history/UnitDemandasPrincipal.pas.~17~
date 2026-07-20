@@ -28,8 +28,10 @@ type
     pnlItemCriarDemanda: TPanel;
     lblCriarDemanda: TLabel;
     imgCriarDemanda: TImage;
+    procedure MenuClick(Sender: TObject);
   private
     { Private declarations }
+    procedure ResetarItensMenu;
   public
     { Public declarations }
   end;
@@ -40,5 +42,51 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.ResetarItensMenu;
+var
+  ComponenteAtual: TComponent;
+  PainelAtual: TPanel;
+  i: Integer;
+begin
+  for i := 0 to pnlMenuLateral.ControlCount - 1 do
+  begin
+     ComponenteAtual := pnlMenuLateral.Controls[i];
+     if ComponenteAtual is TPanel then
+     begin
+        PainelAtual := TPanel(ComponenteAtual);
+     end;
+
+  end;
+
+end;
+
+
+procedure TForm1.MenuClick(Sender: TObject);
+var
+  PainelSelecionado: Tpanel;
+
+begin
+
+  if Sender is TPanel then
+  begin
+      PainelSelecionado := TPanel(Sender);
+  end
+
+  else if Sender is TLabel then  //verifica o tipo
+  begin
+      PainelSelecionado := TPanel(TLabel(Sender).Parent);
+  end
+
+  else if Sender is TImage then
+  begin
+      PainelSelecionado := TPanel(TImage(Sender).Parent);
+  end;
+
+  PainelSelecionado.Color := clSilver;
+
+
+
+end;
 
 end.

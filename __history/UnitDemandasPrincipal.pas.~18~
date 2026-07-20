@@ -49,10 +49,9 @@ var
   PainelAtual: TPanel;
   i: Integer;
 begin
-  for i := 0 to pnlSecoesPrincipais.ControlCount - 1 do
+  for i := 0 to pnlMenuLateral.ControlCount - 1 do
   begin
-     ComponenteAtual := pnlSecoesPrincipais.Controls[i];
-     //ShowMessage(ComponenteAtual.Name);
+     ComponenteAtual := pnlMenuLateral.Controls[i];
      if ComponenteAtual is TPanel then
      begin
         PainelAtual := TPanel(ComponenteAtual);

@@ -31,6 +31,7 @@ type
     procedure MenuClick(Sender: TObject);
   private
     { Private declarations }
+    procedure ResetarItensMenu;
   public
     { Public declarations }
   end;
@@ -42,11 +43,53 @@ implementation
 
 {$R *.dfm}
 
+procedure TForm1.ResetarItensMenu;
+var
+  ComponenteAtual: TComponent;
+  PainelAtual: TPanel;
+  i: Integer;
+begin
+  for i := 0 to pnlSecoesPrincipais.ControlCount - 1 do
+  begin
+     ComponenteAtual := pnlSecoesPrincipais.Controls[i];
+     ShowMessage(ComponenteAtual.Name);
+     if ComponenteAtual is TPanel then
+     begin
+        PainelAtual := TPanel(ComponenteAtual);
+        if PainelAtual.Tag = 1 then
+          PainelAtual.Color := clRed;
+     end;
 
+  end;
+
+end;
 
 
 procedure TForm1.MenuClick(Sender: TObject);
+var
+  PainelSelecionado: Tpanel;
+
 begin
+
+  if Sender is TPanel then
+  begin
+      PainelSelecionado := TPanel(Sender);
+  end
+
+  else if Sender is TLabel then  //verifica o tipo
+  begin
+      PainelSelecionado := TPanel(TLabel(Sender).Parent);
+  end
+
+  else if Sender is TImage then
+  begin
+      PainelSelecionado := TPanel(TImage(Sender).Parent);
+  end;
+
+  ResetarItensMenu;
+  PainelSelecionado.Color := clSilver;
+
+
 
 end;
 

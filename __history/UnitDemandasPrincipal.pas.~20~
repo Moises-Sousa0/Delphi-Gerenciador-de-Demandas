@@ -52,7 +52,7 @@ begin
   for i := 0 to pnlSecoesPrincipais.ControlCount - 1 do
   begin
      ComponenteAtual := pnlSecoesPrincipais.Controls[i];
-     //ShowMessage(ComponenteAtual.Name);
+     ShowMessage(ComponenteAtual.Name);
      if ComponenteAtual is TPanel then
      begin
         PainelAtual := TPanel(ComponenteAtual);

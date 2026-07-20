@@ -51,7 +51,6 @@ object Form1: TForm1
         ExplicitWidth = 90
       end
       object pnlItemDemandas: TPanel
-        Tag = 1
         Left = 1
         Top = 16
         Width = 198
@@ -79,7 +78,6 @@ object Form1: TForm1
         end
       end
       object pnlItemCriarDemanda: TPanel
-        Tag = 1
         Left = 1
         Top = 76
         Width = 198
