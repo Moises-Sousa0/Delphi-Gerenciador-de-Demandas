@@ -1,5 +1,4 @@
-unit uFrmPrincipal;
-
+unit UnitDemandasPrincipal;
 
 interface
 
@@ -8,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
 
 type
-  TFrmPrincipal = class(TForm)
+  TForm1 = class(TForm)
     pnlMenuLateral: TPanel;
     pnlConteudo: TPanel;
     pnlMenuTopo: TPanel;
@@ -33,22 +32,18 @@ type
   private
     { Private declarations }
     procedure ResetarItensMenu;
-    //FTelaAtual: TFrmPrincipal;
   public
     { Public declarations }
   end;
 
 var
-  FrmPrincipal: TFrmPrincipal;
+  Form1: TForm1;
 
 implementation
 
 {$R *.dfm}
 
-uses
-  uFrmDemandas;
-
-procedure TFrmPrincipal.ResetarItensMenu;
+procedure TForm1.ResetarItensMenu;
 var
   ComponenteAtual: TComponent;
   PainelAtual: TPanel;
@@ -70,8 +65,7 @@ begin
 end;
 
 
-
-procedure TFrmPrincipal.MenuClick(Sender: TObject);
+procedure TForm1.MenuClick(Sender: TObject);
 var
   PainelSelecionado: Tpanel;
 

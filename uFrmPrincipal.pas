@@ -1,4 +1,5 @@
-unit UnitDemandasPrincipal;
+unit uFrmPrincipal;
+
 
 interface
 
@@ -7,7 +8,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
 
 type
-  TForm1 = class(TForm)
+  TFrmPrincipal = class(TForm)
     pnlMenuLateral: TPanel;
     pnlConteudo: TPanel;
     pnlMenuTopo: TPanel;
@@ -31,21 +32,46 @@ type
     procedure MenuClick(Sender: TObject);
   private
     { Private declarations }
+    procedure ResetarItensMenu;
+    //FTelaAtual: TFrmPrincipal;
   public
     { Public declarations }
   end;
 
 var
-  Form1: TForm1;
+  FrmPrincipal: TFrmPrincipal;
 
 implementation
 
 {$R *.dfm}
 
+uses
+  uFrmDemandas;
+
+procedure TFrmPrincipal.ResetarItensMenu;
+var
+  ComponenteAtual: TComponent;
+  PainelAtual: TPanel;
+  i: Integer;
+begin
+  for i := 0 to pnlSecoesPrincipais.ControlCount - 1 do
+  begin
+     ComponenteAtual := pnlSecoesPrincipais.Controls[i];
+     //ShowMessage(ComponenteAtual.Name);
+     if ComponenteAtual is TPanel then
+     begin
+        PainelAtual := TPanel(ComponenteAtual);
+        if PainelAtual.Tag = 1 then
+          PainelAtual.Color := clBtnFace;
+     end;
+
+  end;
+
+end;
 
 
 
-procedure TForm1.MenuClick(Sender: TObject);
+procedure TFrmPrincipal.MenuClick(Sender: TObject);
 var
   PainelSelecionado: Tpanel;
 
@@ -66,6 +92,7 @@ begin
       PainelSelecionado := TPanel(TImage(Sender).Parent);
   end;
 
+  ResetarItensMenu;
   PainelSelecionado.Color := clSilver;
 
 

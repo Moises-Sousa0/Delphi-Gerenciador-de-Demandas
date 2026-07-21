@@ -1,7 +1,7 @@
-object Form1: TForm1
+object FrmPrincipal: TFrmPrincipal
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'DemandaFlow'
   ClientHeight = 700
   ClientWidth = 1200
   Color = clGrayText
@@ -20,6 +20,7 @@ object Form1: TForm1
     Align = alLeft
     BevelOuter = bvNone
     Caption = 'pnlMenuLateral'
+    ParentBackground = False
     TabOrder = 0
     object pnlLogo: TPanel
       Left = 0
@@ -30,9 +31,6 @@ object Form1: TForm1
       BevelOuter = bvNone
       Caption = 'pnlLogo'
       TabOrder = 0
-      ExplicitLeft = 1
-      ExplicitTop = 1
-      ExplicitWidth = 198
     end
     object pnlSecoesPrincipais: TPanel
       Left = 0
@@ -43,9 +41,6 @@ object Form1: TForm1
       BevelOuter = bvLowered
       Caption = 'pnlSecoesPrincipais'
       TabOrder = 1
-      ExplicitLeft = 1
-      ExplicitTop = 91
-      ExplicitWidth = 198
       object lblSecoesPrincipais: TLabel
         Left = 1
         Top = 1
@@ -56,6 +51,7 @@ object Form1: TForm1
         ExplicitWidth = 90
       end
       object pnlItemDemandas: TPanel
+        Tag = 1
         Left = 1
         Top = 16
         Width = 198
@@ -63,32 +59,36 @@ object Form1: TForm1
         Align = alTop
         Alignment = taLeftJustify
         BevelOuter = bvLowered
+        ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 196
+        OnClick = MenuClick
         object lblDemandas: TLabel
           Left = 80
           Top = 16
           Width = 56
           Height = 15
           Caption = 'Demandas'
+          OnClick = MenuClick
         end
         object imgDemandas: TImage
           Left = 47
           Top = -23
           Width = 105
           Height = 105
+          OnClick = MenuClick
         end
       end
       object pnlItemCriarDemanda: TPanel
+        Tag = 1
         Left = 1
         Top = 76
         Width = 198
         Height = 60
         Align = alTop
         BevelOuter = bvLowered
+        ParentBackground = False
         TabOrder = 1
-        ExplicitLeft = 139
-        ExplicitWidth = 123
+        OnClick = MenuClick
         object lblCriarDemanda: TLabel
           Left = 74
           Top = 19
@@ -97,12 +97,14 @@ object Form1: TForm1
           Caption = 'Criar Demanda'
           Color = clBtnFace
           ParentColor = False
+          OnClick = MenuClick
         end
         object imgCriarDemanda: TImage
           Left = 47
           Top = -23
           Width = 105
           Height = 105
+          OnClick = MenuClick
         end
       end
     end

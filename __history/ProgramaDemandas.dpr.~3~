@@ -2,7 +2,7 @@ program ProgramaDemandas;
 
 uses
   Vcl.Forms,
-  uFrmPrincipal  in 'uFrmPrincipal.pas' {FrmPrincipal},
+  UnitDemandasPrincipal in 'UnitDemandasPrincipal.pas' {FrmPrincipal},
   uFrmDemandas in 'uFrmDemandas.pas' {FrmDemandas};
 
 {$R *.res}

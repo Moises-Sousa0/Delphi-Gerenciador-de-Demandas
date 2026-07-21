@@ -1,7 +1,7 @@
-object FrmPrincipal: TFrmPrincipal
+object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'DemandaFlow'
+  Caption = 'Form1'
   ClientHeight = 700
   ClientWidth = 1200
   Color = clGrayText
@@ -202,6 +202,10 @@ object FrmPrincipal: TFrmPrincipal
       BevelOuter = bvNone
       Caption = 'pnlPrincipal'
       TabOrder = 1
+      ExplicitLeft = 200
+      ExplicitTop = 0
+      ExplicitWidth = 1000
+      ExplicitHeight = 700
     end
   end
 end
