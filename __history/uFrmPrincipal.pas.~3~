@@ -82,10 +82,9 @@ begin
 
   if Assigned(FTelaAtual)  then
   begin
-    FreeAndNil(FTelaAtual);
+    showmessage('teste');
   end;
-  Tela.Parent := pnlPrincipal;
-  Tela.Align := alClient;
+
 
   FTelaAtual := Tela;
 

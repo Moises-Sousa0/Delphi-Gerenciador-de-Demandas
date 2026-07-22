@@ -57,6 +57,7 @@ var
 
 
 
+
 begin
   for i := 0 to pnlSecoesPrincipais.ControlCount - 1 do
   begin
@@ -73,22 +74,9 @@ begin
 
 end;
 
-
 procedure TFrmPrincipal.AbrirTela(Tela: TForm);
-
-
-
 begin
-
-  if Assigned(FTelaAtual)  then
-  begin
-    FreeAndNil(FTelaAtual);
-  end;
-  Tela.Parent := pnlPrincipal;
-  Tela.Align := alClient;
-
-  FTelaAtual := Tela;
-
+  ShowMessage('a');
 end;
 
 procedure TFrmPrincipal.MenuClick(Sender: TObject);

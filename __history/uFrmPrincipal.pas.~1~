@@ -32,9 +32,8 @@ type
     procedure MenuClick(Sender: TObject);
   private
     { Private declarations }
-    FTelaAtual: TForm;
     procedure ResetarItensMenu;
-    procedure AbrirTela(Tela: TForm);
+    //FTelaAtual: TFrmPrincipal;
   public
     { Public declarations }
   end;
@@ -54,9 +53,6 @@ var
   ComponenteAtual: TComponent;
   PainelAtual: TPanel;
   i: Integer;
-
-
-
 begin
   for i := 0 to pnlSecoesPrincipais.ControlCount - 1 do
   begin
@@ -74,30 +70,10 @@ begin
 end;
 
 
-procedure TFrmPrincipal.AbrirTela(Tela: TForm);
-
-
-
-begin
-
-  if Assigned(FTelaAtual)  then
-  begin
-    FreeAndNil(FTelaAtual);
-  end;
-  Tela.Parent := pnlPrincipal;
-  Tela.Align := alClient;
-
-  FTelaAtual := Tela;
-
-end;
 
 procedure TFrmPrincipal.MenuClick(Sender: TObject);
-
-
 var
   PainelSelecionado: Tpanel;
-
-
 
 begin
 
