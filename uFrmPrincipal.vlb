@@ -10,9 +10,6 @@ Coordinates=477,146,127,58
 [pnlInfoUsuario]
 Coordinates=187,78,98,58
 
-[pnlItemCriarDemanda]
-Coordinates=317,214,140,58
-
 [pnlPrincipal]
 Coordinates=484,78,82,58
 
@@ -35,21 +32,16 @@ Coordinates=249,10,119,58
 [pnlMenuTopo]
 Coordinates=381,78,93,58
 
-[lblCriarDemanda]
-Coordinates=356,146,111,58
-
 [pnlMenuLateral]
 Coordinates=204,214,103,58
 
 [pnlUsuario]
 Coordinates=295,78,76,58
 
-[imgCriarDemanda]
-Coordinates=378,10,119,58
-
 [pnlLogo]
 Coordinates=10,78,60,58
 
 []
-Coordinates=109,214,85,58
+Coordinates=317,214,140,58
+Visible=True
 

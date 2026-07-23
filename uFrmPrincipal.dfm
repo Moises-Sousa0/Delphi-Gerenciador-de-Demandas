@@ -4,22 +4,25 @@ object FrmPrincipal: TFrmPrincipal
   Caption = 'DemandaFlow'
   ClientHeight = 700
   ClientWidth = 1200
-  Color = clGrayText
+  Color = clSilver
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poDesigned
+  OnCreate = FormCreate
   TextHeight = 15
   object pnlMenuLateral: TPanel
     Left = 0
     Top = 0
     Width = 200
     Height = 700
+    Margins.Left = 10
     Align = alLeft
     BevelOuter = bvNone
     Caption = 'pnlMenuLateral'
+    Color = clSilver
     ParentBackground = False
     TabOrder = 0
     object pnlLogo: TPanel
@@ -30,81 +33,148 @@ object FrmPrincipal: TFrmPrincipal
       Align = alTop
       BevelOuter = bvNone
       Caption = 'pnlLogo'
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 0
     end
     object pnlSecoesPrincipais: TPanel
-      Left = 0
-      Top = 90
-      Width = 200
+      AlignWithMargins = True
+      Left = 3
+      Top = 93
+      Width = 191
       Height = 200
+      Margins.Right = 6
       Align = alTop
-      BevelOuter = bvLowered
+      Alignment = taLeftJustify
+      BevelOuter = bvNone
       Caption = 'pnlSecoesPrincipais'
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 1
+      ExplicitLeft = 0
+      ExplicitTop = 90
+      ExplicitWidth = 200
       object lblSecoesPrincipais: TLabel
-        Left = 1
-        Top = 1
-        Width = 198
-        Height = 15
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 185
+        Height = 22
+        Margins.Bottom = 10
         Align = alTop
-        Caption = 'Secoes Principais'
-        ExplicitWidth = 90
+        Caption = 'Principal'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -16
+        Font.Name = 'Trebuchet MS'
+        Font.Style = []
+        ParentFont = False
+        ExplicitWidth = 61
       end
       object pnlItemDemandas: TPanel
         Tag = 1
-        Left = 1
-        Top = 16
-        Width = 198
+        Left = 0
+        Top = 95
+        Width = 191
         Height = 60
         Align = alTop
         Alignment = taLeftJustify
-        BevelOuter = bvLowered
+        BevelOuter = bvNone
+        Color = clSilver
         ParentBackground = False
         TabOrder = 0
         OnClick = MenuClick
+        ExplicitTop = 91
+        ExplicitWidth = 187
         object lblDemandas: TLabel
-          Left = 80
-          Top = 16
-          Width = 56
-          Height = 15
+          AlignWithMargins = True
+          Left = 79
+          Top = 20
+          Width = 87
+          Height = 37
+          Margins.Top = 20
+          Margins.Right = 30
+          Align = alLeft
+          Alignment = taCenter
+          AutoSize = False
           Caption = 'Demandas'
+          Color = 15788258
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Trebuchet MS'
+          Font.Style = []
+          ParentColor = False
+          ParentFont = False
           OnClick = MenuClick
+          ExplicitLeft = 80
+          ExplicitTop = 19
+          ExplicitHeight = 18
         end
         object imgDemandas: TImage
-          Left = 47
-          Top = -23
-          Width = 105
-          Height = 105
+          AlignWithMargins = True
+          Left = 0
+          Top = 8
+          Width = 68
+          Height = 44
+          Margins.Left = 0
+          Margins.Top = 8
+          Margins.Right = 8
+          Margins.Bottom = 8
+          Align = alLeft
           OnClick = MenuClick
         end
       end
-      object pnlItemCriarDemanda: TPanel
+      object Panel1: TPanel
         Tag = 1
-        Left = 1
-        Top = 76
-        Width = 198
+        Left = 0
+        Top = 35
+        Width = 191
         Height = 60
         Align = alTop
-        BevelOuter = bvLowered
+        Alignment = taLeftJustify
+        BevelOuter = bvNone
+        Color = clSilver
         ParentBackground = False
         TabOrder = 1
         OnClick = MenuClick
-        object lblCriarDemanda: TLabel
-          Left = 74
-          Top = 19
-          Width = 79
-          Height = 15
-          Caption = 'Criar Demanda'
-          Color = clBtnFace
+        ExplicitTop = 31
+        ExplicitWidth = 187
+        object Label1: TLabel
+          AlignWithMargins = True
+          Left = 79
+          Top = 20
+          Width = 87
+          Height = 37
+          Margins.Top = 20
+          Margins.Right = 30
+          Align = alLeft
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'Usuarios'
+          Color = clMaroon
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Trebuchet MS'
+          Font.Style = []
           ParentColor = False
-          StyleName = 'Windows'
+          ParentFont = False
           OnClick = MenuClick
+          ExplicitLeft = 71
+          ExplicitTop = 51
         end
-        object imgCriarDemanda: TImage
-          Left = 47
-          Top = -23
-          Width = 105
-          Height = 105
+        object Image1: TImage
+          AlignWithMargins = True
+          Left = 0
+          Top = 8
+          Width = 68
+          Height = 44
+          Margins.Left = 0
+          Margins.Top = 8
+          Margins.Right = 8
+          Margins.Bottom = 8
+          Align = alLeft
           OnClick = MenuClick
         end
       end
@@ -117,7 +187,7 @@ object FrmPrincipal: TFrmPrincipal
     Height = 700
     Align = alClient
     BevelOuter = bvLowered
-    Color = clCream
+    Color = clSilver
     ParentBackground = False
     TabOrder = 1
     object pnlMenuTopo: TPanel
@@ -128,6 +198,8 @@ object FrmPrincipal: TFrmPrincipal
       Align = alTop
       BevelOuter = bvLowered
       Caption = 'pnlMenuTopo'
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 0
       object pnlUsuario: TPanel
         Left = 747
@@ -136,6 +208,8 @@ object FrmPrincipal: TFrmPrincipal
         Height = 58
         Align = alRight
         Caption = 'pnlUsuario'
+        Color = clSilver
+        ParentBackground = False
         TabOrder = 0
         object imgUsuario: TImage
           Left = 1
@@ -177,6 +251,8 @@ object FrmPrincipal: TFrmPrincipal
       Align = alClient
       BevelOuter = bvNone
       Caption = 'pnlPrincipal'
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 1
     end
   end

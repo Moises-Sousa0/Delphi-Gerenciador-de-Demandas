@@ -5,7 +5,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.jpeg;
 
 type
   TFrmPrincipal = class(TForm)
@@ -23,10 +24,11 @@ type
     pnlItemDemandas: TPanel;
     lblDemandas: TLabel;
     imgDemandas: TImage;
-    pnlItemCriarDemanda: TPanel;
-    lblCriarDemanda: TLabel;
-    imgCriarDemanda: TImage;
+    Panel1: TPanel;
+    Label1: TLabel;
+    Image1: TImage;
     procedure MenuClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
     FTelaAtual: TForm;
@@ -93,6 +95,12 @@ end;
 
 
 
+procedure TFrmPrincipal.FormCreate(Sender: TObject);
+begin
+  pnlItemDemandas.Color := pnlMenuLateral.Color;
+  Panel1.Color := pnlMenuLateral.Color;
+end;
+
 procedure TFrmPrincipal.MenuClick(Sender: TObject);
 
 var
@@ -122,7 +130,8 @@ begin
   end;
 
   ResetarItensMenu;
-  PainelSelecionado.Color := clSilver;
+  PainelSelecionado.Color := clGray;
+
 
   if PainelSelecionado = pnlItemDemandas then
   begin
