@@ -57,7 +57,6 @@ var
 
 
 
-
 begin
   for i := 0 to pnlSecoesPrincipais.ControlCount - 1 do
   begin
@@ -74,17 +73,33 @@ begin
 
 end;
 
+
 procedure TFrmPrincipal.AbrirTela(Tela: TForm);
+
+
+
 begin
-  ShowMessage('a');
+
+  if Assigned(FTelaAtual)  then
+  begin
+    FreeAndNil(FTelaAtual);
+  end;
+  Tela.Parent := pnlPrincipal;
+  Tela.Align := alClient;
+  Tela.Show;
+
+
+  FTelaAtual := Tela;
+
+
 end;
+
+
 
 procedure TFrmPrincipal.MenuClick(Sender: TObject);
 
-
 var
   PainelSelecionado: Tpanel;
-
 
 
 begin
@@ -102,6 +117,16 @@ begin
   else if Sender is TImage then
   begin
       PainelSelecionado := TPanel(TImage(Sender).Parent);
+  end
+
+  else if PainelSelecionado = pnlItemDemandas then
+  begin
+    AbrirTela(TFrmDemandas.Create(Self));
+  end
+
+  else if PainelSelecionado = pnlItemCriarDemanda then
+  begin
+
   end;
 
   ResetarItensMenu;

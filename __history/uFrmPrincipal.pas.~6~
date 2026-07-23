@@ -88,18 +88,16 @@ begin
   Tela.Align := alClient;
   Tela.Show;
 
-
   FTelaAtual := Tela;
-
 
 end;
 
-
-
 procedure TFrmPrincipal.MenuClick(Sender: TObject);
+
 
 var
   PainelSelecionado: Tpanel;
+
 
 
 begin
@@ -117,16 +115,6 @@ begin
   else if Sender is TImage then
   begin
       PainelSelecionado := TPanel(TImage(Sender).Parent);
-  end
-
-  else if PainelSelecionado = pnlItemDemandas then
-  begin
-    AbrirTela(TFrmDemandas.Create(Self));
-  end
-
-  else
-  begin
-    Exit;
   end;
 
   ResetarItensMenu;

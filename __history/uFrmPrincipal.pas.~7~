@@ -121,12 +121,12 @@ begin
 
   else if PainelSelecionado = pnlItemDemandas then
   begin
-    AbrirTela(TFrmDemandas.Create(Self));
+
   end
 
-  else
+  else if PainelSelecionado = pnlItemCriarDemanda then
   begin
-    Exit;
+
   end;
 
   ResetarItensMenu;

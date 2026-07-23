@@ -122,9 +122,8 @@ begin
   else if PainelSelecionado = pnlItemDemandas then
   begin
     AbrirTela(TFrmDemandas.Create(Self));
-  end
+  end;
 
-  else
   begin
     Exit;
   end;
