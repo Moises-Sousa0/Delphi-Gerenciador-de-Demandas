@@ -1,0 +1,181 @@
+object FrmDemandas: TFrmDemandas
+  Left = 0
+  Top = 0
+  ClientHeight = 550
+  ClientWidth = 742
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object pnlResumoDemandas: TPanel
+    Left = 0
+    Top = 0
+    Width = 742
+    Height = 60
+    Align = alTop
+    TabOrder = 0
+    ExplicitTop = 8
+    object pnlCardAbertas: TPanel
+      Left = 1
+      Top = 1
+      Width = 185
+      Height = 58
+      Align = alLeft
+      TabOrder = 0
+      ExplicitLeft = 9
+      ExplicitTop = 2
+      object lblAbertas: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Caption = 'Abertas'
+        ExplicitWidth = 40
+        ExplicitHeight = 15
+      end
+      object lblQtdAbertas: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Alignment = taCenter
+        Caption = '1'
+        ExplicitWidth = 6
+        ExplicitHeight = 15
+      end
+    end
+    object pnlCardAndamento: TPanel
+      Left = 186
+      Top = 1
+      Width = 185
+      Height = 58
+      Align = alLeft
+      TabOrder = 1
+      ExplicitLeft = 194
+      ExplicitTop = 2
+      object lblQtdAndamento: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Alignment = taCenter
+        Caption = '1'
+        ExplicitWidth = 6
+        ExplicitHeight = 15
+      end
+      object lblAndamento: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Caption = 'Em Andamento'
+        ExplicitWidth = 83
+        ExplicitHeight = 15
+      end
+    end
+    object pnlCardAtrasadas: TPanel
+      Left = 371
+      Top = 1
+      Width = 185
+      Height = 58
+      Align = alLeft
+      TabOrder = 2
+      ExplicitLeft = 9
+      ExplicitTop = 2
+      object lblQtdAtrasadas: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Caption = 'Atrasadas'
+        ExplicitWidth = 51
+        ExplicitHeight = 15
+      end
+      object lblAtrasadas: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Alignment = taCenter
+        Caption = '1'
+        ExplicitLeft = 17
+        ExplicitTop = 20
+      end
+    end
+    object pnlCardConcluidas: TPanel
+      Left = 556
+      Top = 1
+      Width = 185
+      Height = 58
+      Align = alLeft
+      TabOrder = 3
+      ExplicitLeft = 9
+      ExplicitTop = 2
+      object lblConcluidas: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Caption = 'Concluidas'
+        ExplicitWidth = 59
+        ExplicitHeight = 15
+      end
+      object lblQtdConcluidas: TLabel
+        Left = 1
+        Top = 1
+        Width = 183
+        Height = 56
+        Align = alClient
+        Alignment = taCenter
+        Caption = '1'
+        ExplicitWidth = 6
+        ExplicitHeight = 15
+      end
+    end
+  end
+  object pnlFiltrosDemandas: TPanel
+    Left = 0
+    Top = 60
+    Width = 742
+    Height = 50
+    Align = alTop
+    Caption = 'Filtros'
+    TabOrder = 1
+    ExplicitTop = 8
+  end
+  object pnlListaDemandas: TPanel
+    Left = 0
+    Top = 110
+    Width = 742
+    Height = 440
+    Align = alClient
+    Caption = 'demandas'
+    TabOrder = 2
+    ExplicitLeft = 371
+    ExplicitTop = 1
+    ExplicitWidth = 370
+    ExplicitHeight = 58
+    object sbxDemandas: TScrollBox
+      Left = 1
+      Top = 1
+      Width = 740
+      Height = 438
+      Align = alClient
+      TabOrder = 0
+      ExplicitLeft = 280
+      ExplicitTop = 200
+      ExplicitWidth = 185
+      ExplicitHeight = 41
+    end
+  end
+end

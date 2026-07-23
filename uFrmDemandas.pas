@@ -9,12 +9,32 @@ uses
 type
   TFrmDemandas = class(TForm)
     pnlResumoDemandas: TPanel;
-    pnlFiltrosDemandas: TPanel;
     pnlListaDemandas: TPanel;
+    pnlFiltrosDemandas: TPanel;
     pnlCardAbertas: TPanel;
+    lblAbertas: TLabel;
+    lblQtdAbertas: TLabel;
     pnlCardAndamento: TPanel;
+    lblQtdAndamento: TLabel;
+    lblAndamento: TLabel;
     pnlCardAtrasadas: TPanel;
+    lblQtdAtrasadas: TLabel;
+    lblAtrasadas: TLabel;
     pnlCardConcluidas: TPanel;
+    lblConcluidas: TLabel;
+    lblQtdConcluidas: TLabel;
+    sbxDemandas: TScrollBox;
+    pnlCardDemanda: TPanel;
+    pnlCabecalhoCard: TPanel;
+    lblNumeroDemanda: TLabel;
+    lblOpcoesDemanda: TLabel;
+    pnlConteudoCard: TPanel;
+    pnlRodapeCard: TPanel;
+    lblTituloCard: TLabel;
+    pnlDescriCard: TLabel;
+    lblPrioridadeDemanda: TLabel;
+    lblNomeDemanda: TLabel;
+    lblPrazoDemanda: TLabel;
   private
     { Private declarations }
   public
