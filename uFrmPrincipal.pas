@@ -13,9 +13,6 @@ type
     pnlConteudo: TPanel;
     pnlMenuTopo: TPanel;
     pnlPrincipal: TPanel;
-    pnlPesquisa: TPanel;
-    edtPesquisa: TEdit;
-    imgPesquisa: TImage;
     pnlUsuario: TPanel;
     imgUsuario: TImage;
     lblSeta: TLabel;
@@ -124,14 +121,15 @@ begin
     Exit;
   end;
 
+  ResetarItensMenu;
+  PainelSelecionado.Color := clSilver;
+
   if PainelSelecionado = pnlItemDemandas then
   begin
     AbrirTela(TFrmDemandas.Create(Self));
   end;
 
 
-  ResetarItensMenu;
-  PainelSelecionado.Color := clSilver;
 
 
 

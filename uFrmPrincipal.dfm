@@ -97,6 +97,7 @@ object FrmPrincipal: TFrmPrincipal
           Caption = 'Criar Demanda'
           Color = clBtnFace
           ParentColor = False
+          StyleName = 'Windows'
           OnClick = MenuClick
         end
         object imgCriarDemanda: TImage
@@ -128,31 +129,6 @@ object FrmPrincipal: TFrmPrincipal
       BevelOuter = bvLowered
       Caption = 'pnlMenuTopo'
       TabOrder = 0
-      object pnlPesquisa: TPanel
-        Left = 1
-        Top = 1
-        Width = 400
-        Height = 58
-        Align = alLeft
-        Caption = 'pnlPesquisa'
-        TabOrder = 0
-        object imgPesquisa: TImage
-          Left = 1
-          Top = 1
-          Width = 56
-          Height = 56
-          Align = alLeft
-        end
-        object edtPesquisa: TEdit
-          Left = 57
-          Top = 1
-          Width = 248
-          Height = 56
-          Align = alLeft
-          TabOrder = 0
-          ExplicitHeight = 23
-        end
-      end
       object pnlUsuario: TPanel
         Left = 747
         Top = 1
@@ -160,7 +136,7 @@ object FrmPrincipal: TFrmPrincipal
         Height = 58
         Align = alRight
         Caption = 'pnlUsuario'
-        TabOrder = 1
+        TabOrder = 0
         object imgUsuario: TImage
           Left = 1
           Top = 1

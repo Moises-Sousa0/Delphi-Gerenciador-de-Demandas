@@ -1,14 +1,8 @@
-﻿[edtPesquisa]
-Coordinates=107,146,85,58
-
-[imgUsuario]
+﻿[imgUsuario]
 Coordinates=202,146,80,58
 
 [lblDemandas]
 Coordinates=10,214,89,58
-
-[imgPesquisa]
-Coordinates=10,10,88,58
 
 [lblSecoesPrincipais]
 Coordinates=477,146,127,58
@@ -38,9 +32,6 @@ Visible=True
 [pnlItemDemandas]
 Coordinates=249,10,119,58
 
-[pnlPesquisa]
-Coordinates=109,214,85,58
-
 [pnlMenuTopo]
 Coordinates=381,78,93,58
 
@@ -60,5 +51,5 @@ Coordinates=378,10,119,58
 Coordinates=10,78,60,58
 
 []
-Coordinates=562,232,91,36
+Coordinates=109,214,85,58
 

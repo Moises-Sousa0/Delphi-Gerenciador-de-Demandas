@@ -1,0 +1,16 @@
+program ProgramaDemandas;
+
+uses
+  Vcl.Forms,
+  uFrmPrincipal  in 'uFrmPrincipal.pas' {FrmPrincipal},
+  uFrmDemandas in 'uFrmDemandas.pas' {FrmDemandas};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TFrmDemandas, FrmDemandas);
+  Application.Run;
+end.

@@ -2,8 +2,10 @@ program ProgramaDemandas;
 
 uses
   Vcl.Forms,
-  uFrmPrincipal  in 'uFrmPrincipal.pas' {FrmPrincipal},
-  uFrmDemandas in 'uFrmDemandas.pas' {FrmDemandas};
+  uFrmPrincipal in 'uFrmPrincipal.pas' {FrmPrincipal},
+  uFrmDemandas in 'uFrmDemandas.pas' {FrmDemandas},
+  Vcl.Themes,
+  Vcl.Styles;
 
 {$R *.res}
 

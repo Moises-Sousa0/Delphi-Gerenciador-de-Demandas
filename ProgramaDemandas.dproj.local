@@ -2,7 +2,7 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2026/07/20 11:31:07.000.088,=C:\Users\lokil\Desktop\ProjetoDelphi\Unit2.pas</Transaction>
-    <Transaction>2026/07/20 11:32:00.000.332,C:\Users\lokil\Desktop\ProjetoDelphi\Unit2.dfm=C:\Users\lokil\Desktop\ProjetoDelphi\uFrmDemandas.dfm</Transaction>
-    <Transaction>2026/07/20 11:32:00.000.332,C:\Users\lokil\Desktop\ProjetoDelphi\Unit2.pas=C:\Users\lokil\Desktop\ProjetoDelphi\uFrmDemandas.pas</Transaction>
+    <Transaction>2026/07/20 11:32:00.000.332,C:\Users\lokil\Desktop\ProjetoDelphi\uFrmDemandas.dfm=C:\Users\lokil\Desktop\ProjetoDelphi\Unit2.dfm</Transaction>
+    <Transaction>2026/07/20 11:32:00.000.332,C:\Users\lokil\Desktop\ProjetoDelphi\uFrmDemandas.pas=C:\Users\lokil\Desktop\ProjetoDelphi\Unit2.pas</Transaction>
   </Transactions>
 </BorlandProject>

@@ -1,0 +1,208 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'DemandaFlow'
+  ClientHeight = 700
+  ClientWidth = 1200
+  Color = clGrayText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poDesigned
+  TextHeight = 15
+  object pnlMenuLateral: TPanel
+    Left = 0
+    Top = 0
+    Width = 200
+    Height = 700
+    Align = alLeft
+    BevelOuter = bvNone
+    Caption = 'pnlMenuLateral'
+    ParentBackground = False
+    TabOrder = 0
+    object pnlLogo: TPanel
+      Left = 0
+      Top = 0
+      Width = 200
+      Height = 90
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'pnlLogo'
+      TabOrder = 0
+    end
+    object pnlSecoesPrincipais: TPanel
+      Left = 0
+      Top = 90
+      Width = 200
+      Height = 200
+      Align = alTop
+      BevelOuter = bvLowered
+      Caption = 'pnlSecoesPrincipais'
+      TabOrder = 1
+      object lblSecoesPrincipais: TLabel
+        Left = 1
+        Top = 1
+        Width = 198
+        Height = 15
+        Align = alTop
+        Caption = 'Secoes Principais'
+        ExplicitWidth = 90
+      end
+      object pnlItemDemandas: TPanel
+        Tag = 1
+        Left = 1
+        Top = 16
+        Width = 198
+        Height = 60
+        Align = alTop
+        Alignment = taLeftJustify
+        BevelOuter = bvLowered
+        ParentBackground = False
+        TabOrder = 0
+        OnClick = MenuClick
+        object lblDemandas: TLabel
+          Left = 80
+          Top = 16
+          Width = 56
+          Height = 15
+          Caption = 'Demandas'
+          OnClick = MenuClick
+        end
+        object imgDemandas: TImage
+          Left = 47
+          Top = -23
+          Width = 105
+          Height = 105
+          OnClick = MenuClick
+        end
+      end
+      object pnlItemCriarDemanda: TPanel
+        Tag = 1
+        Left = 1
+        Top = 76
+        Width = 198
+        Height = 60
+        Align = alTop
+        BevelOuter = bvLowered
+        ParentBackground = False
+        TabOrder = 1
+        OnClick = MenuClick
+        object lblCriarDemanda: TLabel
+          Left = 74
+          Top = 19
+          Width = 79
+          Height = 15
+          Caption = 'Criar Demanda'
+          Color = clBtnFace
+          ParentColor = False
+          StyleName = 'Windows'
+          OnClick = MenuClick
+        end
+        object imgCriarDemanda: TImage
+          Left = 47
+          Top = -23
+          Width = 105
+          Height = 105
+          OnClick = MenuClick
+        end
+      end
+    end
+  end
+  object pnlConteudo: TPanel
+    Left = 200
+    Top = 0
+    Width = 1000
+    Height = 700
+    Align = alClient
+    BevelOuter = bvLowered
+    Color = clCream
+    ParentBackground = False
+    TabOrder = 1
+    object pnlMenuTopo: TPanel
+      Left = 1
+      Top = 1
+      Width = 998
+      Height = 60
+      Align = alTop
+      BevelOuter = bvLowered
+      Caption = 'pnlMenuTopo'
+      TabOrder = 0
+      object pnlPesquisa: TPanel
+        Left = 1
+        Top = 1
+        Width = 400
+        Height = 58
+        Align = alLeft
+        Caption = 'pnlPesquisa'
+        TabOrder = 0
+        object imgPesquisa: TImage
+          Left = 1
+          Top = 1
+          Width = 56
+          Height = 56
+          Align = alLeft
+        end
+        object edtPesquisa: TEdit
+          Left = 57
+          Top = 1
+          Width = 248
+          Height = 56
+          Align = alLeft
+          TabOrder = 0
+          ExplicitHeight = 23
+        end
+      end
+      object pnlUsuario: TPanel
+        Left = 747
+        Top = 1
+        Width = 250
+        Height = 58
+        Align = alRight
+        Caption = 'pnlUsuario'
+        TabOrder = 1
+        object imgUsuario: TImage
+          Left = 1
+          Top = 1
+          Width = 60
+          Height = 56
+          Align = alLeft
+        end
+        object lblSeta: TLabel
+          Left = 233
+          Top = 1
+          Width = 16
+          Height = 56
+          Align = alRight
+          Caption = 'V'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -24
+          Font.Name = 'Segoe UI'
+          Font.Style = [fsBold]
+          ParentFont = False
+          ExplicitHeight = 32
+        end
+        object pnlInfoUsuario: TPanel
+          Left = 61
+          Top = 1
+          Width = 160
+          Height = 56
+          Align = alLeft
+          TabOrder = 0
+        end
+      end
+    end
+    object pnlPrincipal: TPanel
+      Left = 1
+      Top = 61
+      Width = 998
+      Height = 638
+      Align = alClient
+      BevelOuter = bvNone
+      Caption = 'pnlPrincipal'
+      TabOrder = 1
+    end
+  end
+end
