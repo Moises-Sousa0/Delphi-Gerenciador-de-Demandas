@@ -106,28 +106,29 @@ begin
 
   if Sender is TPanel then
   begin
-      PainelSelecionado := TPanel(Sender);
+    PainelSelecionado := TPanel(Sender);
   end
 
   else if Sender is TLabel then  //verifica o tipo
   begin
-      PainelSelecionado := TPanel(TLabel(Sender).Parent);
+    PainelSelecionado := TPanel(TLabel(Sender).Parent);
   end
 
   else if Sender is TImage then
   begin
-      PainelSelecionado := TPanel(TImage(Sender).Parent);
-  end
-
-  else if PainelSelecionado = pnlItemDemandas then
-  begin
-    AbrirTela(TFrmDemandas.Create(Self));
+    PainelSelecionado := TPanel(TImage(Sender).Parent);
   end
 
   else
   begin
     Exit;
   end;
+
+  if PainelSelecionado = pnlItemDemandas then
+  begin
+    AbrirTela(TFrmDemandas.Create(Self));
+  end;
+
 
   ResetarItensMenu;
   PainelSelecionado.Color := clSilver;
