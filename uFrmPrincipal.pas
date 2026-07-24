@@ -6,7 +6,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
-  Vcl.Imaging.jpeg;
+  Vcl.Imaging.jpeg, Vcl.Imaging.pngimage;
 
 type
   TFrmPrincipal = class(TForm)
@@ -27,6 +27,7 @@ type
     Panel1: TPanel;
     Label1: TLabel;
     Image1: TImage;
+    imgLogoPrincipal: TImage;
     procedure MenuClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private

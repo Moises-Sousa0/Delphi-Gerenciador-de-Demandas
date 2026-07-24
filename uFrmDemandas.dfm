@@ -3,7 +3,7 @@ object FrmDemandas: TFrmDemandas
   Top = 0
   ClientHeight = 550
   ClientWidth = 742
-  Color = clBtnFace
+  Color = clSilver
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
@@ -16,17 +16,18 @@ object FrmDemandas: TFrmDemandas
     Width = 742
     Height = 60
     Align = alTop
+    Color = clSilver
+    ParentBackground = False
     TabOrder = 0
-    ExplicitTop = 8
     object pnlCardAbertas: TPanel
       Left = 1
       Top = 1
       Width = 185
       Height = 58
       Align = alLeft
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 9
-      ExplicitTop = 2
       object lblAbertas: TLabel
         Left = 1
         Top = 1
@@ -55,9 +56,9 @@ object FrmDemandas: TFrmDemandas
       Width = 185
       Height = 58
       Align = alLeft
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 194
-      ExplicitTop = 2
       object lblQtdAndamento: TLabel
         Left = 1
         Top = 1
@@ -86,9 +87,9 @@ object FrmDemandas: TFrmDemandas
       Width = 185
       Height = 58
       Align = alLeft
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 2
-      ExplicitLeft = 9
-      ExplicitTop = 2
       object lblQtdAtrasadas: TLabel
         Left = 1
         Top = 1
@@ -107,8 +108,8 @@ object FrmDemandas: TFrmDemandas
         Align = alClient
         Alignment = taCenter
         Caption = '1'
-        ExplicitLeft = 17
-        ExplicitTop = 20
+        ExplicitWidth = 6
+        ExplicitHeight = 15
       end
     end
     object pnlCardConcluidas: TPanel
@@ -117,9 +118,9 @@ object FrmDemandas: TFrmDemandas
       Width = 185
       Height = 58
       Align = alLeft
+      Color = clSilver
+      ParentBackground = False
       TabOrder = 3
-      ExplicitLeft = 9
-      ExplicitTop = 2
       object lblConcluidas: TLabel
         Left = 1
         Top = 1
@@ -150,8 +151,9 @@ object FrmDemandas: TFrmDemandas
     Height = 50
     Align = alTop
     Caption = 'Filtros'
+    Color = clSilver
+    ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 8
   end
   object pnlListaDemandas: TPanel
     Left = 0
@@ -160,11 +162,9 @@ object FrmDemandas: TFrmDemandas
     Height = 440
     Align = alClient
     Caption = 'demandas'
+    Color = clSilver
+    ParentBackground = False
     TabOrder = 2
-    ExplicitLeft = 371
-    ExplicitTop = 1
-    ExplicitWidth = 370
-    ExplicitHeight = 58
     object sbxDemandas: TScrollBox
       Left = 1
       Top = 1
@@ -172,8 +172,6 @@ object FrmDemandas: TFrmDemandas
       Height = 438
       Align = alClient
       TabOrder = 0
-      ExplicitLeft = 0
-      ExplicitTop = 0
       object pnlCardDemanda: TPanel
         Left = 30
         Top = 30
@@ -188,25 +186,20 @@ object FrmDemandas: TFrmDemandas
           Height = 41
           Align = alTop
           TabOrder = 0
-          ExplicitLeft = 32
-          ExplicitTop = 104
-          ExplicitWidth = 185
           object lblNumeroDemanda: TLabel
-            Left = 1
-            Top = 1
+            Left = 8
+            Top = 10
             Width = 37
-            Height = 39
-            Align = alLeft
+            Height = 15
             Alignment = taCenter
             Caption = '#00000'
-            ExplicitHeight = 15
           end
           object lblOpcoesDemanda: TLabel
-            Left = 238
+            Left = 226
             Top = 1
             Width = 9
-            Height = 39
-            Align = alRight
+            Height = 32
+            Align = alCustom
             Caption = #8942
             Font.Charset = ANSI_CHARSET
             Font.Color = clWindowText
@@ -214,8 +207,6 @@ object FrmDemandas: TFrmDemandas
             Font.Name = 'Arial'
             Font.Style = [fsBold]
             ParentFont = False
-            ExplicitLeft = 241
-            ExplicitHeight = 32
           end
         end
         object pnlConteudoCard: TPanel
@@ -225,10 +216,6 @@ object FrmDemandas: TFrmDemandas
           Height = 177
           Align = alClient
           TabOrder = 1
-          ExplicitLeft = 32
-          ExplicitTop = 104
-          ExplicitWidth = 185
-          ExplicitHeight = 41
           object lblTituloCard: TLabel
             Left = 8
             Top = 6
@@ -257,7 +244,6 @@ object FrmDemandas: TFrmDemandas
           Height = 70
           Align = alBottom
           TabOrder = 2
-          ExplicitTop = 209
           object lblPrioridadeDemanda: TLabel
             Left = 8
             Top = 6
@@ -265,12 +251,12 @@ object FrmDemandas: TFrmDemandas
             Height = 15
             Caption = 'Prioridade'
           end
-          object lblNomeDemanda: TLabel
+          object lblNomeResponsavel: TLabel
             Left = 8
             Top = 24
-            Width = 33
+            Width = 65
             Height = 15
-            Caption = 'Nome'
+            Caption = 'Respons'#225'vel'
           end
           object lblPrazoDemanda: TLabel
             Left = 8

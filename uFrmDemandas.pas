@@ -33,7 +33,7 @@ type
     lblTituloCard: TLabel;
     pnlDescriCard: TLabel;
     lblPrioridadeDemanda: TLabel;
-    lblNomeDemanda: TLabel;
+    lblNomeResponsavel: TLabel;
     lblPrazoDemanda: TLabel;
   private
     { Private declarations }
